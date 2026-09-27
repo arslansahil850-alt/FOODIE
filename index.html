@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Foodie - Discover delicious food, explore meals, and enjoy a better food experience.">
+    <meta name="theme-color" content="#ffffff">
+    <title>Foodie | Delicious Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                <span class="logo-mark">F</span>
+                <span class="logo-text">Foodie</span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#categories" class="nav-link">Categories</a>
+                <a href="#popular" class="nav-link">Popular</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="https://github.com/arslansahil850-alt" class="github-link" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <a href="#" class="portfolio-link">
+                    Portfolio
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <span class="hero-badge">Fresh & Delicious</span>
+
+                <h1>
+                    Discover Your
+                    <span>Favorite Food</span>
+                </h1>
+
+                <p>
+                    Explore delicious meals, discover new flavors,
+                    and find something special for every craving.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#popular" class="btn btn-primary">Explore Food</a>
+                    <a href="#categories" class="btn btn-secondary">View Categories</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="hero-image-wrapper">
+                    <img
+                        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80"
+                        alt="Delicious food served on a table">
+                </div>
+
+                <div class="floating-card rating-card">
+                    <span class="card-icon">★</span>
+
+                    <div>
+                        <strong>4.9</strong>
+                        <small>Food Rating</small>
+                    </div>
+                </div>
+
+                <div class="floating-card delivery-card">
+                    <span class="card-icon">✓</span>
+
+                    <div>
+                        <strong>Fresh</strong>
+                        <small>Every Day</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="categories section" id="categories">
+
+            <div class="section-heading">
+                <span class="section-label">Explore</span>
+                <h2>Food Categories</h2>
+                <p>Choose from a variety of delicious food categories.</p>
+            </div>
+
+            <div class="category-grid">
+
+                <button class="category-card active" type="button" data-category="all">
+                    <span class="category-icon">🍽️</span>
+                    <h3>All Food</h3>
+                    <p>Everything</p>
+                </button>
+
+                <button class="category-card" type="button" data-category="burger">
+                    <span class="category-icon">🍔</span>
+                    <h3>Burgers</h3>
+                    <p>Juicy & Fresh</p>
+                </button>
+
+                <button class="category-card" type="button" data-category="pizza">
+                    <span class="category-icon">🍕</span>
+                    <h3>Pizza</h3>
+                    <p>Hot & Cheesy</p>
+                </button>
+
+                <button class="category-card" type="button" data-category="dessert">
+                    <span class="category-icon">🍰</span>
+                    <h3>Desserts</h3>
+                    <p>Sweet Treats</p>
+                </button>
+
+                <button class="category-card" type="button" data-category="drink">
+                    <span class="category-icon">🥤</span>
+                    <h3>Drinks</h3>
+                    <p>Cool & Fresh</p>
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="popular section" id="popular">
+
+            <div class="section-heading section-heading-row">
+
+                <div>
+                    <span class="section-label">Our Menu</span>
+                    <h2>Popular Food</h2>
+                    <p>Some of our most loved dishes.</p>
+                </div>
+
+                <div class="food-search">
+                    <label for="food-search" class="sr-only">Search food</label>
+
+                    <input
+                        type="search"
+                        id="food-search"
+                        placeholder="Search food..."
+                        autocomplete="off">
+
+                    <button type="button" class="search-btn" aria-label="Search">
+                        
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="food-grid" id="food-grid">
+
+                <article class="food-card" data-category="burger" data-name="classic beef burger">
+
+                    <div class="food-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80"
+                            alt="Classic beef burger"
+                            loading="lazy">
+
+                        <span class="food-tag">Popular</span>
+
+                        <button
+                            class="favorite-btn"
+                            type="button"
+                            aria-label="Add Classic Beef Burger to favorites">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+                            <h3>Classic Beef Burger</h3>
+                            <span class="food-rating">★ 4.9</span>
+                        </div>
+
+                        <p>
+                            Juicy beef patty with fresh vegetables and special sauce.
+                        </p>
+
+                        <div class="food-bottom">
+                            <strong>$8.99</strong>
+
+                            <button class="add-cart-btn" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="food-card" data-category="pizza" data-name="margherita pizza">
+
+                    <div class="food-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=700&q=80"
+                            alt="Margherita pizza"
+                            loading="lazy">
+
+                        <span class="food-tag">Fresh</span>
+
+                        <button
+                            class="favorite-btn"
+                            type="button"
+                            aria-label="Add Margherita Pizza to favorites">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+                            <h3>Margherita Pizza</h3>
+                            <span class="food-rating">★ 4.8</span>
+                        </div>
+
+                        <p>
+                            Classic pizza with tomato, mozzarella, basil, and herbs.
+                        </p>
+
+                        <div class="food-bottom">
+                            <strong>$11.99</strong>
+
+                            <button class="add-cart-btn" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="food-card" data-category="burger" data-name="crispy chicken burger">
+
+                    <div class="food-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=700&q=80"
+                            alt="Crispy chicken burger"
+                            loading="lazy">
+
+                        <span class="food-tag">Hot</span>
+
+                        <button
+                            class="favorite-btn"
+                            type="button"
+                            aria-label="Add Crispy Chicken Burger to favorites">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+                            <h3>Crispy Chicken Burger</h3>
+                            <span class="food-rating">★ 4.7</span>
+                        </div>
+
+                        <p>
+                            Crispy chicken, fresh lettuce, cheese, and creamy sauce.
+                        </p>
+
+                        <div class="food-bottom">
+                            <strong>$9.49</strong>
+
+                            <button class="add-cart-btn" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="food-card" data-category="dessert" data-name="chocolate cake">
+
+                    <div class="food-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80"
+                            alt="Chocolate cake"
+                            loading="lazy">
+
+                        <span class="food-tag">Sweet</span>
+
+                        <button
+                            class="favorite-btn"
+                            type="button"
+                            aria-label="Add Chocolate Cake to favorites">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+                            <h3>Chocolate Cake</h3>
+                            <span class="food-rating">★ 4.9</span>
+                        </div>
+
+                        <p>
+                            Rich chocolate cake with smooth chocolate cream.
+                        </p>
+
+                        <div class="food-bottom">
+                            <strong>$6.99</strong>
+
+                            <button class="add-cart-btn" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="food-card" data-category="pizza" data-name="pepperoni pizza">
+
+                    <div class="food-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=700&q=80"
+                            alt="Pepperoni pizza"
+                            loading="lazy">
+
+                        <span class="food-tag">Best Seller</span>
+
+                        <button
+                            class="favorite-btn"
+                            type="button"
+                            aria-label="Add Pepperoni Pizza to favorites">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+                            <h3>Pepperoni Pizza</h3>
+                            <span class="food-rating">★ 4.8</span>
+                        </div>
+
+                        <p>
+                            Loaded with pepperoni, mozzarella, tomato sauce, and herbs.
+                        </p>
+
+                        <div class="food-bottom">
+                            <strong>$13.49</strong>
+
+                            <button class="add-cart-btn" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="food-card" data-category="drink" data-name="fresh berry smoothie">
+
+                    <div class="food-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?auto=format&fit=crop&w=700&q=80"
+                            alt="Fresh berry smoothie"
+                            loading="lazy">
+
+                        <span class="food-tag">Fresh</span>
+
+                        <button
+                            class="favorite-btn"
+                            type="button"
+                            aria-label="Add Fresh Berry Smoothie to favorites">
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="food-info">
+
+                        <div class="food-title">
+                            <h3>Berry Smoothie</h3>
+                            <span class="food-rating">★ 4.8</span>
+                        </div>
+
+                        <p>
+                            A refreshing blend of fresh berries and creamy yogurt.
+                        </p>
+
+                        <div class="food-bottom">
+                            <strong>$5.49</strong>
+
+                            <button class="add-cart-btn" type="button">
+                                Add to Cart
+                            </button>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="empty-state" id="empty-state" hidden>
+                <span>🔎</span>
+                <h3>No Food Found</h3>
+                <p>Try another search or choose a different category.</p>
+            </div>
+
+        </section>
+
+        <section class="about section" id="about">
+
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1000&q=80"
+                    alt="Restaurant food and dining experience"
+                    loading="lazy">
+            </div>
+
+            <div class="about-content">
+
+                <span class="section-label">About Foodie</span>
+
+                <h2>Good Food Brings People Together</h2>
+
+                <p>
+                    Foodie is made for people who love discovering
+                    delicious meals and exploring new flavors.
+                </p>
+
+                <p>
+                    From quick bites to sweet treats, discover food
+                    that makes every moment better.
+                </p>
+
+                <div class="about-stats">
+
+                    <div class="stat">
+                        <strong>50+</strong>
+                        <span>Food Items</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>20+</strong>
+                        <span>Categories</span>
+                    </div>
+
+                    <div class="stat">
+                        <strong>4.9</strong>
+                        <span>Average Rating</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="cta-section" id="contact">
+
+            <div class="cta-content">
+
+                <span class="section-label">Ready to Explore?</span>
+
+                <h2>Find Something Delicious Today</h2>
+
+                <p>
+                    Explore our food collection and discover your next favorite meal.
+                </p>
+
+                <a href="#popular" class="btn btn-primary">
+                    Explore Menu
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    <span class="logo-mark">F</span>
+                    <span class="logo-text">Foodie</span>
+                </a>
+
+                <p>
+                    Discover delicious food and enjoy every bite.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Foodie</h3>
+
+                <a href="#home">Home</a>
+                <a href="#categories">Categories</a>
+                <a href="#popular">Popular Food</a>
+                <a href="#about">About</a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3>Connect</h3>
+
+                <a
+                    href="https://github.com/arslansahil850-alt"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <a href="#">
+                    Portfolio
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © <span id="current-year"></span> Foodie. All rights reserved.
+            </p>
+
+            <p class="powered-by">
+                Powered by
+                <a
+                    href="https://github.com/arslansahil850-alt"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    Developing with Arslan
+                </a>
+            </p>
+
+        </div>
+
+    </footer>
+
+    <button class="scroll-top" type="button" aria-label="Scroll to top">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+

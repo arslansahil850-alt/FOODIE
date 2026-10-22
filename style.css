@@ -1,4 +1,3 @@
-
 :root {
     --primary: #ff6b35;
     --primary-dark: #e95724;
@@ -57,6 +56,11 @@ img {
 
 ul {
     list-style: none;
+}
+
+.my-logo-pic {
+    width: 40px;
+    height: 40px;
 }
 
 .sr-only {
@@ -263,7 +267,7 @@ ul {
     color: var(--primary);
 }
 
-.hero-content > p {
+.hero-content>p {
     max-width: 540px;
     color: var(--text);
     font-size: 17px;
@@ -599,7 +603,7 @@ ul {
     font-weight: 700;
 }
 
-.food-info > p {
+.food-info>p {
     min-height: 50px;
     color: var(--text);
     font-size: 12px;
@@ -682,7 +686,7 @@ ul {
     letter-spacing: -1.7px;
 }
 
-.about-content > p {
+.about-content>p {
     max-width: 570px;
     color: var(--text);
     font-size: 15px;
@@ -826,13 +830,47 @@ ul {
     font-size: 11px;
 }
 
+.powered-by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: #8b95a7;
+}
+
 .powered-by a {
-    color: var(--dark);
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: #3670d4;
     font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.powered-by a img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    border-radius: 6px;
 }
 
 .powered-by a:hover {
-    color: var(--primary);
+    color: #6ea0ff;
+}
+
+@media (max-width: 480px) {
+    .powered-by {
+        font-size: 12px;
+        gap: 6px;
+    }
+
+    .powered-by a img {
+        width: 22px;
+        height: 22px;
+    }
 }
 
 .scroll-top {
@@ -920,6 +958,7 @@ ul {
 }
 
 @keyframes float {
+
     0%,
     100% {
         transform: translateY(0);
@@ -941,6 +980,7 @@ ul {
 }
 
 @media (max-width: 1050px) {
+
     .navbar,
     .hero,
     .section,
@@ -1044,7 +1084,7 @@ ul {
         text-align: center;
     }
 
-    .hero-content > p {
+    .hero-content>p {
         margin-left: auto;
         margin-right: auto;
     }
@@ -1088,6 +1128,7 @@ ul {
 }
 
 @media (max-width: 600px) {
+
     .navbar,
     .hero,
     .section,
@@ -1106,7 +1147,7 @@ ul {
         letter-spacing: -2px;
     }
 
-    .hero-content > p {
+    .hero-content>p {
         font-size: 14px;
     }
 
@@ -1169,7 +1210,7 @@ ul {
         padding: 17px;
     }
 
-    .food-info > p {
+    .food-info>p {
         min-height: auto;
     }
 
@@ -1268,6 +1309,3 @@ ul {
         gap: 5px;
     }
 }
-
-
-
